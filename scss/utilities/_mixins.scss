@@ -1,0 +1,39 @@
+//  Mixins
+// ======================================
+
+//Center container
+@mixin center($w) {
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//flex container
+@mixin flex(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+//font styling
+@mixin font(
+  $size: null,
+  $weight: null,
+  $style: null) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+//Media Queries
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+    @media (min-width: $value) {
+    @content;
+    }
+}

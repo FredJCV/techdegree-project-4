@@ -1,0 +1,32 @@
+//  Images
+// ======================================
+
+.img--logo {
+    @extend %image;
+    padding: 1em 0 2em 0;
+    @include center(160px);
+    @include mq('med') {
+        margin-top: 15px;
+    }
+}
+
+.img--frame {
+    border: 1px solid $color-text-frame;
+    padding: 12px;
+    margin-top: 1.5em;
+    min-width: 200px;
+    max-width: 430px;
+    @extend %image;
+    @include center(100%);
+    @include mq('med') {
+        margin-left: 45px;
+        margin-top: .5em;
+    }
+}
+
+.img--avatar {
+    @extend %image;
+    margin: auto;
+    padding-top: 1em;
+    max-width: 200px;
+}

@@ -1,0 +1,39 @@
+//  Buttons
+// ======================================
+
+[class^=btn--] {
+    @include flex($just:center);
+    width: 100%;
+    @extend %nav-item-border;
+    @include font(15px, bold);
+    text-transform: uppercase;
+    color: $white;
+    background-color: $color-secondary;
+    margin-top: 1.7em;
+    padding: .8em;
+    @include mq('med') {
+        @include center(15%);
+        margin-top: 3em;
+    }
+}
+
+.btn--default[type="submit"] {
+    width: 100%;
+    margin-top: 1.7em;
+}
+
+.btn--success {
+    background-color: $color-btn-success;
+}
+
+.btn--error {
+    background-color: $color-btn-error;
+}
+
+.btn--warning {
+    background-color: $color-btn-warning;
+}
+
+.btn--info {
+    background-color: $color-btn-info;
+}

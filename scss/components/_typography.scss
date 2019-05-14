@@ -1,0 +1,35 @@
+//  Typography
+// ======================================
+
+.container {
+    font-family: $font-stack-primary;
+    @include font(17px);
+    color: $color-text-p;
+}
+
+.link {
+    color: $color-secondary;
+    @include font($weight:bold);
+    @extend %links;
+}
+
+.blockquote {
+    border-left: 8px solid $color-primary;
+    @include font($size:26px, $style:italic);
+    padding: 0 1em;
+    margin: 1em 0 0 1em;
+    line-height: 1.2em;
+    border-radius: 5px;
+}
+
+.headline--primary {
+    color: $color-primary;
+    @include font(32px, bold);
+    line-height: 1em;
+    padding: .5em 0 1em .5em;
+}
+
+.headline--secondary {
+    color: $color-text-head-sec;
+    padding-top: 70px;
+}

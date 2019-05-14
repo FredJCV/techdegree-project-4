@@ -1,0 +1,55 @@
+//  Variables
+// ======================================
+
+// Fonts
+$font-stack-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Breakpoints
+$breakpoints: (
+  'sm': 480px,  
+  'med': 768px, 
+  'lg': 1400px,
+);
+
+// Colors
+$white: #fff;
+
+$color-primary: #58E1C1;
+$color-secondary: #55DEFD;
+
+$color-text: #918f8f;
+$color-text-p: lighten($color-text, 5%);
+$color-text-head-sec: lighten($color-text, 10%);
+$color-text-frame: lighten($color-text, 30%);
+
+$color-btn-success: #63CC82;
+$color-btn-error: #E4757A;
+$color-btn-warning: #FD7856;
+$color-btn-info: #927BC1;
+
+$color-btn-1: $white;
+$color-btn-2: $white;
+$color-btn-3: #DEB2EE;
+$color-btn-4: #7EE6FD;
+$color-btn-5: #88D9A0;
+$color-btn-6: #3FABCA;
+$color-btn-7: #EC9FA3;
+$color-btn-8: #FD9F85;
+$color-btn-9: $white;
+$color-btn-10: $white;
+$color-btn-11: $white;
+$color-btn-12: #80E8D1;
+
+$btn-colors:
+$color-btn-1,
+$color-btn-2,
+$color-btn-3,
+$color-btn-4,
+$color-btn-5,
+$color-btn-6,
+$color-btn-7,
+$color-btn-8,
+$color-btn-9,
+$color-btn-10,
+$color-btn-11,
+$color-btn-12;

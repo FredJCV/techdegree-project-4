@@ -1,0 +1,26 @@
+//  Placeholders
+// ======================================
+
+%links {
+    text-decoration: none;
+    color: $color-text;
+}
+
+%image {
+    display: flex;
+    align-self: center;
+}
+
+%nav-item-border {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+%clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

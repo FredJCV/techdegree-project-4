@@ -1,0 +1,39 @@
+//  Navigation
+// ======================================
+
+.nav {
+    @include flex($dir:column);
+    @include mq('med') {
+        @include flex($dir:row, $just:space-between);
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: 90px;
+        max-width: 450px;
+        }
+        @include mq('lg') {
+            margin-right: 180px;
+        }
+    
+}
+
+ul[class=nav] {
+    margin-bottom: 3em;
+}
+
+.nav__item {
+    a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        @extend %nav-item-border;
+        @include font(17px);
+        &:hover {
+            background-color: $color-primary;
+            color: $white;
+        }
+        @include mq('med') {
+            padding: .7em;
+            width: auto;
+        }
+    }
+}
